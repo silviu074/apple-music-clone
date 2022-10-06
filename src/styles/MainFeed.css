@@ -1,0 +1,15 @@
+.mainFeed{
+    padding-top: 100px;
+    text-align: left;
+    margin-left: clamp(250px, 250px, 250px);
+    width:100%-250px;
+}
+
+.featured{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: stretch;
+}

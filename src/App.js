@@ -13,12 +13,14 @@ import { ListenNow } from './pages/ListenNow';
 import { Radio } from './pages/Radio';
 import { RecentlyAdded } from './pages/RecentlyAdded';
 import { Songs } from './pages/Songs';
+import { MusicPlayer } from './components/MusicPlayer';
 
 
 function App() {
   return (
     <div>
     <LeftMenu/>
+    <MusicPlayer/>
     <BrowserRouter>
       <Routes>
 
