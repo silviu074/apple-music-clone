@@ -15,15 +15,17 @@
 	align-content: stretch;
 }
 
+hr.solid {
+    border: 0.11px solid rgb(63, 63, 63);
+  }
 
-/*--------------------------------- swiper 1x5  ---------------------------------*/
+/*--------------------------------- Swiper 1x5  ---------------------------------*/
 
 .swiper1x5Carousel{
     display: flex;
 }
 
 .swiper1x5Element{
-    border: 5px solid red;
     width:20%;
     height: 15%;
     margin:1%;
@@ -33,6 +35,10 @@
 .swiper1x5Image{
     max-width: 100%;
     border-radius: 20px;
+}
+
+.swiper1x5Image:hover{
+    opacity: 70%;
 }
 
 .swiper1x5Element p{
@@ -46,3 +52,11 @@
     font-weight: bold;
 }
 
+
+
+
+
+
+
+
+  
