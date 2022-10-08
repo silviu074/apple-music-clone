@@ -1,8 +1,9 @@
 .mainFeed{
     padding-top: 100px;
     text-align: left;
-    margin-left: clamp(250px, 250px, 250px);
-    width:100%-250px;
+    width:80%;
+    float: right;
+    max-width: calc(100% - 250px);
 }
 
 .featured{
@@ -13,3 +14,35 @@
 	align-items: stretch;
 	align-content: stretch;
 }
+
+
+/*--------------------------------- swiper 1x5  ---------------------------------*/
+
+.swiper1x5Carousel{
+    display: flex;
+}
+
+.swiper1x5Element{
+    border: 5px solid red;
+    width:20%;
+    height: 15%;
+    margin:1%;
+    overflow: auto;
+}
+
+.swiper1x5Image{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.swiper1x5Element p{
+    font-size: small;
+    margin: 2px;
+    color:gray
+}
+
+.swiper1x5Element p:first-child{
+    color:white;
+    font-weight: bold;
+}
+

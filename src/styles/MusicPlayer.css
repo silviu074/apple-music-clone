@@ -1,7 +1,7 @@
 .container{
     text-align: left;
-    position:fixed;
     height:50px;
     background-color: rgb(78, 78, 78);
-    margin-left: 250px;
+    width:80%;
+    float: right;
 }
