@@ -1,9 +1,10 @@
 .mainFeed{
-    padding-top: 100px;
     text-align: left;
-    width:80%;
+    width:76%;
     float: right;
+    padding: 100px 2% 0 2%;
     max-width: calc(100% - 250px);
+    
 }
 
 .featured{
@@ -21,20 +22,14 @@ hr.solid {
 
 /*--------------------------------- Swiper 1x5  ---------------------------------*/
 
-.swiper1x5Carousel{
-    display: flex;
-}
-
 .swiper1x5Element{
-    width:20%;
-    height: 15%;
-    margin:1%;
+    width:100%;
     overflow: auto;
 }
 
 .swiper1x5Image{
-    max-width: 100%;
-    border-radius: 20px;
+    width: 100%;
+    border-radius: 15px;
 }
 
 .swiper1x5Image:hover{
@@ -52,11 +47,35 @@ hr.solid {
     font-weight: bold;
 }
 
+/*--------------------------------- Swiper 2x5  ---------------------------------*/
+
+.swiper2x5Element{
+    width:100%;
+    overflow: auto;
+}
+
+/* .swiper2x5Element .swiper2x5Image:last-child{
+    border:1px solid red;
+} */
+
+.swiper2x5Image{
+    width: 100%;
+    border-radius: 15px;
+}
 
 
+.swiper2x5Image:hover{
+    opacity: 70%;
+}
 
+.swiper2x5Element p{
+    font-size: small;
+    margin: 2px;
+    color:gray;
+}
 
-
-
-
+.swiper2x5Element p:first-child{
+    color:white;
+    font-weight: bold;
+}
   

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/MainFeed.css'
 import { Swiper1x5 } from '../components/Swiper1x5';
+import { Swiper2x5 } from '../components/Swiper2x5';
 
 
 export const Browse = () => {
@@ -47,6 +48,7 @@ export const Browse = () => {
     <div>
       <h3>New Music</h3>
       <hr className='solid'/>
+      <Swiper2x5/>
     </div>
 
     {/*--------------------------------- Swiper 1x4 --------------------------------- */}
