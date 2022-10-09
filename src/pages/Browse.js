@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/MainFeed.css'
-import { Swiper1x5 } from '../components/Swiper1x5';
+import { Swiper1x5 } from '../components/Swiper1x5/Swiper1x5';
 import { Swiper2x5 } from '../components/Swiper2x5';
 
 

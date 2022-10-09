@@ -20,31 +20,9 @@ hr.solid {
     border: 0.11px solid rgb(63, 63, 63);
   }
 
-/*--------------------------------- Swiper 1x5  ---------------------------------*/
 
-.swiper1x5Element{
-    width:100%;
-    overflow: auto;
-}
-
-.swiper1x5Image{
-    width: 100%;
-    border-radius: 15px;
-}
-
-.swiper1x5Image:hover{
-    opacity: 70%;
-}
-
-.swiper1x5Element p{
-    font-size: small;
-    margin: 2px;
-    color:gray
-}
-
-.swiper1x5Element p:first-child{
-    color:white;
-    font-weight: bold;
+.swiper1x5Buttons:hover{
+    color:red;
 }
 
 /*--------------------------------- Swiper 2x5  ---------------------------------*/

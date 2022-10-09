@@ -1,0 +1,57 @@
+
+
+/*--------------------------------- Swiper 1x5  ---------------------------------*/
+
+.element{
+    width:100%;
+    overflow: auto;
+}
+
+.image{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.element p{
+    font-size: small;
+    margin: 2px;
+    color:gray
+}
+
+.element p:first-child{
+    color:white;
+    font-weight: bold;
+}
+
+.playIcon{
+    position: absolute;
+    left:5%;
+    bottom:5%;
+}
+
+.moreIcon{
+    position: absolute;
+    right:5%;
+    bottom:5%;
+}
+
+.buttons{
+    display: none;
+}
+
+.element:hover{
+    opacity: 70%;
+}
+
+.image:hover +.buttons {
+    display: inline-block;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+.element p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
