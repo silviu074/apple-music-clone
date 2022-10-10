@@ -2,7 +2,10 @@ import React from 'react'
 import '../styles/MainFeed.css'
 import { Swiper1x5 } from '../components/Swiper1x5/Swiper1x5';
 import { Swiper2x5 } from '../components/Swiper2x5';
+import { YouGottaHear } from '../components/Swiper1x5/data';
+import { NowInSpecialAudio } from '../components/Swiper1x5/data';
 
+export const BrowserContext = React.createContext()
 
 export const Browse = () => {
   
@@ -31,7 +34,9 @@ export const Browse = () => {
     <div>
       <h3>You Gotta hear</h3>
       <hr className='solid'/>
-      <Swiper1x5/>
+      <BrowserContext.Provider value={YouGottaHear} >
+        <Swiper1x5/>
+      </BrowserContext.Provider>
 
     </div>
 
@@ -40,7 +45,9 @@ export const Browse = () => {
     <div>
       <h3>Now in special audio</h3>
       <hr className='solid'/>
-      <Swiper1x5/>
+      <BrowserContext.Provider value={NowInSpecialAudio} >
+        <Swiper1x5/>
+      </BrowserContext.Provider>
     </div>
 
     {/*--------------------------------- Swiper 2x5 --------------------------------- */}
@@ -63,7 +70,7 @@ export const Browse = () => {
     <div>
       <h3>Essentials</h3>
       <hr className='solid'/>
-      <Swiper1x5/>
+      {/* <Swiper1x5/> */}
     </div>
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
@@ -71,7 +78,7 @@ export const Browse = () => {
     <div>
       <h3>Hit the gym</h3>
       <hr className='solid'/>
-      <Swiper1x5/>
+      {/* <Swiper1x5/> */}
     </div>
 
     {/*--------------------------------- Swiper 1x4 --------------------------------- */}

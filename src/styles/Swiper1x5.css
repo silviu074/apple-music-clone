@@ -35,9 +35,9 @@
     bottom:5%;
 }
 
-.buttons{
+/* .buttons{
     display: none;
-}
+} */
 
 .element:hover{
     opacity: 70%;
@@ -55,3 +55,13 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.playIcon, .moreIcon {
+    color: white;
+    cursor: pointer;
+  }
+
+.playIcon:hover, .moreIcon:hover {
+    color: red;
+    cursor: pointer;
+  }

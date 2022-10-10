@@ -3,6 +3,7 @@ import '../styles/LeftMenu.css'
 import { FaApple} from "react-icons/fa";
 import { FiRadio, FiClock } from "react-icons/fi";
 import { SiItunes } from "react-icons/si";
+import { AiOutlineUnorderedList } from "react-icons/ai";
 import { BsMusicNote, BsPlayCircle } from "react-icons/bs";
 import { IoMdMicrophone, IoIosAlbums } from "react-icons/io";
 import { IconContext } from 'react-icons';
@@ -30,9 +31,10 @@ export const LeftMenu = () => {
             <p>Listen Now</p>
         </div>
 
-        <div>
+        <div className='iconTextContainer'>
+            <i className='leftMenuIcon'><AiOutlineUnorderedList/></i>
             <p>Browse</p>
-            </div>
+        </div>
 
         <div className='iconTextContainer'>
             <i className='leftMenuIcon'><FiRadio/></i>

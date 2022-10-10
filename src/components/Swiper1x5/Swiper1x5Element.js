@@ -8,6 +8,7 @@ import { ObjectInfo } from './Swiper1x5';
 
 export const Swiper1x5Element = () => {
 
+
   const info = useContext(ObjectInfo)
 
   return (
@@ -16,14 +17,14 @@ export const Swiper1x5Element = () => {
         <img className= 'image'src={info.link}
           alt='Random cover'></img>
           <div className= 'buttons'>
-            <i className= 'playIcon'>
+            <span className= 'playIcon' >
              <BsFillPlayCircleFill
                  size="30px"/>
-            </i>
-            <i className= 'moreIcon'>
+            </span>
+            <span className= 'moreIcon'>
               <CgMoreO
                  size="30px"/>
-            </i>
+            </span>
           </div>
           </div>
           <div>
