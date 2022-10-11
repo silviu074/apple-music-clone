@@ -3,5 +3,6 @@
     height:50px;
     background-color: rgb(78, 78, 78);
     width:80%;
+    max-width: calc(100% - 200px);
     float: right;
 }

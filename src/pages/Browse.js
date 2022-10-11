@@ -1,16 +1,17 @@
 import React from 'react'
 import '../styles/MainFeed.css'
 import { Swiper1x5 } from '../components/Swiper1x5/Swiper1x5';
-import { Swiper2x5 } from '../components/Swiper2x5';
-import { YouGottaHear } from '../components/Swiper1x5/data';
-import { NowInSpecialAudio } from '../components/Swiper1x5/data';
+import { Swiper2x5 } from '../components/Swiper2x5/Swiper2x5';
+import { NowInSpecialAudio, YouGottaHear } from '../components/Swiper1x5/data';
+import { NewMusic } from '../components/Swiper2x5/data';
 
-export const BrowserContext = React.createContext()
+export const Context = React.createContext()
 
 export const Browse = () => {
   
   return (
-    <div className='mainFeed' >
+    <div className='mainFeedContainer' >
+      <div className='mainFeed' >
       <h1>Browse</h1>
       <hr className='solid'/>
 
@@ -34,9 +35,9 @@ export const Browse = () => {
     <div>
       <h3>You Gotta hear</h3>
       <hr className='solid'/>
-      <BrowserContext.Provider value={YouGottaHear} >
+      <Context.Provider value={YouGottaHear} >
         <Swiper1x5/>
-      </BrowserContext.Provider>
+      </Context.Provider>
 
     </div>
 
@@ -45,9 +46,9 @@ export const Browse = () => {
     <div>
       <h3>Now in special audio</h3>
       <hr className='solid'/>
-      <BrowserContext.Provider value={NowInSpecialAudio} >
+      <Context.Provider value={NowInSpecialAudio} >
         <Swiper1x5/>
-      </BrowserContext.Provider>
+      </Context.Provider>
     </div>
 
     {/*--------------------------------- Swiper 2x5 --------------------------------- */}
@@ -55,7 +56,9 @@ export const Browse = () => {
     <div>
       <h3>New Music</h3>
       <hr className='solid'/>
-      <Swiper2x5/>
+      <Context.Provider value={NewMusic} >
+        <Swiper2x5/>
+      </Context.Provider>
     </div>
 
     {/*--------------------------------- Swiper 1x4 --------------------------------- */}
@@ -87,7 +90,7 @@ export const Browse = () => {
       <h3>Music by Mood</h3>
       <hr className='solid'/>
     </div>
-
+    </div>
     </div>
   )
 }

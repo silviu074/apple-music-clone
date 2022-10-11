@@ -1,67 +1,28 @@
 
 
-/*--------------------------------- Swiper 1x5  ---------------------------------*/
-
-.element{
+.swiper1x5Element{
     width:100%;
     overflow: auto;
 }
 
-.image{
-    width: 100%;
-    border-radius: 15px;
-}
-
-.element p{
+.swiper1x5Element p{
     font-size: small;
     margin: 2px;
     color:gray
 }
 
-.element p:first-child{
+.swiper1x5Element p:first-child{
     color:white;
     font-weight: bold;
 }
 
-.playIcon{
-    position: absolute;
-    left:5%;
-    bottom:5%;
-}
 
-.moreIcon{
-    position: absolute;
-    right:5%;
-    bottom:5%;
-}
-
-/* .buttons{
-    display: none;
-} */
-
-.element:hover{
+.swiper1x5Element:hover{
     opacity: 70%;
 }
 
-.image:hover +.buttons {
-    display: inline-block;
-}
 
-.imageContainer {
-    position: relative;
-}
-
-.element p:hover{
+.swiper1x5Element p:hover{
     cursor: pointer;
     text-decoration: underline;
 }
-
-.playIcon, .moreIcon {
-    color: white;
-    cursor: pointer;
-  }
-
-.playIcon:hover, .moreIcon:hover {
-    color: red;
-    cursor: pointer;
-  }

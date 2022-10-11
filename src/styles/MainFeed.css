@@ -1,10 +1,13 @@
-.mainFeed{
+.mainFeedContainer{
     text-align: left;
-    width:76%;
+    width:80%;
     float: right;
-    padding: 100px 2% 0 2%;
-    max-width: calc(100% - 250px);
+    max-width: calc(100% - 200px);
     
+}
+
+.mainFeed{
+    padding: 0 2% 0 2%;
 }
 
 .featured{
@@ -20,40 +23,57 @@ hr.solid {
     border: 0.11px solid rgb(63, 63, 63);
   }
 
-
-.swiper1x5Buttons:hover{
-    color:red;
-}
-
-/*--------------------------------- Swiper 2x5  ---------------------------------*/
-
-.swiper2x5Element{
-    width:100%;
-    overflow: auto;
-}
-
-/* .swiper2x5Element .swiper2x5Image:last-child{
-    border:1px solid red;
-} */
-
-.swiper2x5Image{
+.image{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 
-.swiper2x5Image:hover{
-    opacity: 70%;
+.playIcon{
+    position: absolute;
+    left:5%;
+    bottom:5%;
 }
 
-.swiper2x5Element p{
-    font-size: small;
-    margin: 2px;
-    color:gray;
+.moreIcon{
+    position: absolute;
+    right:5%;
+    bottom:5%;
 }
 
-.swiper2x5Element p:first-child{
-    color:white;
-    font-weight: bold;
+.buttons{
+    display: none;
 }
-  
+
+
+.image:hover +.buttons {
+    display: inline-block;
+}
+
+.buttons:hover{
+    display: inline-block;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+
+.playIcon, .moreIcon {
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+ 
+.playIcon:hover, .moreIcon:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+
+@media only screen and (max-width: 480px) {
+    .mainFeedContainer {
+       width:100%;
+       max-width: 100%;
+    }
+}
