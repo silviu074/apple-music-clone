@@ -103,3 +103,56 @@ export const NowInSpecialAudio=[
       link: 'https://source.unsplash.com/random/300x300/?Music&20'
     }
 ]
+
+export const HitTheGym =[
+  {
+      playlistName: 'Playlist #1',
+      playlistArtist: 'Playlist Artist #1',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&1'
+    },
+    {
+      playlistName: 'Playlist #2',
+      playlistArtist: 'Playlist Artist #2',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&2'
+    },
+    {
+      playlistName: 'Playlist #3',
+      playlistArtist: 'Playlist Artist #3',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&3'
+    },
+    {
+      playlistName: 'Playlist #4',
+      playlistArtist: 'Playlist Artist #4',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&4'
+    },
+    {
+      playlistName: 'Playlist #5',
+      playlistArtist: 'Playlist Artist #5',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&5'
+    },
+    {
+      playlistName: 'Playlist #6',
+      playlistArtist: 'Playlist Artist #6',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&6'
+    },
+    {
+      playlistName: 'Playlist #7',
+      playlistArtist: 'Playlist Artist #7',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&7'
+    },
+    {
+      playlistName: 'Playlist #8',
+      playlistArtist: 'Playlist Artist #8',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&8'
+    },
+    {
+      playlistName: 'Playlist #9',
+      playlistArtist: 'Playlist Artist #9',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&9'
+    },
+    {
+      playlistName: 'Playlist #10',
+      playlistArtist: 'Playlist Artist #10',
+      link: 'https://source.unsplash.com/random/300x300/?Fitness&10'
+    }
+]

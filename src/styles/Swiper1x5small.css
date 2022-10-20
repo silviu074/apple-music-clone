@@ -1,0 +1,28 @@
+
+
+.Swiper1x5smallElement{
+    width:100%;
+    overflow: auto;
+}
+
+.Swiper1x5smallElement p{
+    font-size: small;
+    margin: 2px;
+    color:gray
+}
+
+.Swiper1x5smallElement p:first-child{
+    color:white;
+    font-weight: bold;
+}
+
+
+.Swiper1x5smallElement:hover{
+    opacity: 70%;
+}
+
+
+.Swiper1x5smallElement p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

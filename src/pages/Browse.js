@@ -1,9 +1,13 @@
 import React from 'react'
 import '../styles/MainFeed.css'
+import { Swiper1x2 } from '../components/Swiper1x2/Swiper1x2';
 import { Swiper1x5 } from '../components/Swiper1x5/Swiper1x5';
+import { Swiper1x5small } from '../components/Swiper1x5small/Swiper1x5small';
 import { Swiper2x5 } from '../components/Swiper2x5/Swiper2x5';
-import { NowInSpecialAudio, YouGottaHear } from '../components/Swiper1x5/data';
+import { NowInSpecialAudio, YouGottaHear, HitTheGym } from '../components/Swiper1x5/data';
 import { NewMusic } from '../components/Swiper2x5/data';
+import { AppleMusicRadio, MusicByMood } from '../components/Swiper1x5small/data';
+import { Featured } from '../components/Swiper1x2/data';
 
 export const Context = React.createContext()
 
@@ -17,18 +21,10 @@ export const Browse = () => {
 
       {/*--------------------------------- Featured content --------------------------------- */}
 
-        <div className='featured' >
-            <div>
-              <p>Updated Playlist</p>
-              <h3>A-List Pop</h3>
-              <p>Apple music Pop</p>
-            </div>
-            <div>
-              <p>Updated Playlist</p>
-              <h3>A-List Pop</h3>
-              <p>Apple music Pop</p>
-            </div>
-        </div>
+      <h3>Today's Hits</h3>
+      <Context.Provider value={Featured} >
+        <Swiper1x2/>
+      </Context.Provider>
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
@@ -66,14 +62,9 @@ export const Browse = () => {
     <div>
       <h3>Apple Music Radio</h3>
       <hr className='solid'/>
-    </div>
-
-    {/*--------------------------------- Swiper 1x5 --------------------------------- */}
-
-    <div>
-      <h3>Essentials</h3>
-      <hr className='solid'/>
-      {/* <Swiper1x5/> */}
+      <Context.Provider value={AppleMusicRadio} >
+        <Swiper1x5small/>
+      </Context.Provider>
     </div>
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
@@ -81,7 +72,9 @@ export const Browse = () => {
     <div>
       <h3>Hit the gym</h3>
       <hr className='solid'/>
-      {/* <Swiper1x5/> */}
+      <Context.Provider value={HitTheGym} >
+        <Swiper1x5/>
+      </Context.Provider>
     </div>
 
     {/*--------------------------------- Swiper 1x4 --------------------------------- */}
@@ -89,6 +82,9 @@ export const Browse = () => {
     <div>
       <h3>Music by Mood</h3>
       <hr className='solid'/>
+      <Context.Provider value={MusicByMood} >
+        <Swiper1x5small/>
+      </Context.Provider>
     </div>
     </div>
     </div>
