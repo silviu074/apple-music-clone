@@ -4,7 +4,6 @@ import {CgMoreO} from "react-icons/cg";
 import '../../styles/Swiper1x5.css'
 import '../../styles/MainFeed.css'
 import { ObjectInfo } from './Swiper1x5';
-import 'swiper/css';
 
 export const Swiper1x5Element = () => {
 

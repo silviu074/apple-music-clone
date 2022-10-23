@@ -1,9 +1,11 @@
 import React ,{useContext} from 'react'
+import 'swiper/css/bundle';
 import '../../styles/Swiper1x5.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {Swiper1x5Element} from './Swiper1x5Element'
 import { Context } from '../../pages/Browse';
-import 'swiper/css';
+import { Navigation, Pagination } from 'swiper';
+
 
 export const ObjectInfo = React.createContext()
 
@@ -12,7 +14,7 @@ export const Swiper1x5 = () => {
   const objectInfo = useContext(Context)
 
   return (
-    <Swiper spaceBetween={20}
+    <Swiper spaceBetween={20}  modules={[Navigation, Pagination]} navigation
        breakpoints={{
         // if the width is >= 280 display 5 slides (mobile)
       280: {

@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import {BsFillPlayCircleFill} from "react-icons/bs";
-import {CgMoreO} from "react-icons/cg";
 import '../../styles/Swiper1x2.css'
 import '../../styles/MainFeed.css'
 import { ObjectInfo } from './Swiper1x2';
@@ -20,12 +19,12 @@ export const Swiper1x2Element = () => {
         <div className= 'imageContainer'>
         <img className= 'image'src={objectInfo.link}
           alt='Random cover'></img>
+          <div className='overlayText'>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div>
           <div className= 'buttons'>
-            <span className= 'playIcon' >
+            <span className= 'playIconSwiper1x2' >
              <BsFillPlayCircleFill size="30px"/>
-            </span>
-            <span className= 'moreIcon'>
-              <CgMoreO size="30px"/>
             </span>
           </div>
           </div>

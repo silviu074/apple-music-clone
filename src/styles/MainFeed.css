@@ -1,13 +1,13 @@
 .mainFeedContainer{
     text-align: left;
-    width:80%;
+    width:85%;
     float: right;
     max-width: calc(100% - 200px);
     
 }
 
 .mainFeed{
-    padding: 0 2% 0 2%;
+    padding: 0 4% 0 4%;
 }
 
 .featured{
@@ -69,6 +69,8 @@ hr.solid {
     color: red;
     cursor: pointer;
   }
+
+
 
 
 @media only screen and (max-width: 480px) {

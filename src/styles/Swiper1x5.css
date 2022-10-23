@@ -26,3 +26,15 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+/* React swiper customization */
+
+
+.swiper:hover +.swiper-button-next{
+    display: inline-block;
+}
+
+.swiper-button-next::after{
+    right:20px;
+    color: red;
+  } 

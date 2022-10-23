@@ -26,3 +26,26 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.playIconSwiper1x2{
+    position: absolute;
+    right:5%;
+    bottom:5%;
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+ 
+.playIconSwiper1x2:hover {
+    color: red;
+    cursor: pointer;
+}
+ 
+.overlayText {
+    position: absolute;
+    left:3%;
+    bottom:5%;
+    display: block;
+    color: white;
+}
+

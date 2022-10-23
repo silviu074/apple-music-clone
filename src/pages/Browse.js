@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/MainFeed.css'
 import { Swiper1x2 } from '../components/Swiper1x2/Swiper1x2';
 import { Swiper1x5 } from '../components/Swiper1x5/Swiper1x5';
 import { Swiper1x5small } from '../components/Swiper1x5small/Swiper1x5small';
@@ -8,6 +7,7 @@ import { NowInSpecialAudio, YouGottaHear, HitTheGym } from '../components/Swiper
 import { NewMusic } from '../components/Swiper2x5/data';
 import { AppleMusicRadio, MusicByMood } from '../components/Swiper1x5small/data';
 import { Featured } from '../components/Swiper1x2/data';
+import '../styles/MainFeed.css'
 
 export const Context = React.createContext()
 

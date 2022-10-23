@@ -1,7 +1,8 @@
-.musicPlayerContainer{
+.footerContainer{
     text-align: left;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(58, 58, 58);
     width:85%;
     max-width: calc(100% - 200px);
     float: right;
+    margin-bottom:0;
 }

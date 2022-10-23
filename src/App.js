@@ -1,6 +1,7 @@
 
 import './App.css';
 import { LeftMenu } from './components/LeftMenu';
+import { Footer } from './components/Footer';
 import {
   BrowserRouter,
   Route,
@@ -35,6 +36,7 @@ function App() {
 
        </Routes>
     </BrowserRouter>
+    <Footer/>
     </div>
   );
 }
