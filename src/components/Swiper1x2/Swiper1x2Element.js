@@ -12,16 +12,16 @@ export const Swiper1x2Element = () => {
   return (
     <div className= 'Swiper1x2Element'>
         <div>
-          <p>{objectInfo.albumStatus}</p>
-          <p>{objectInfo.albumName}</p>
-          <p>{objectInfo.albumArtist}</p>
+          <p>{objectInfo.status}</p>
+          <p>{objectInfo.name}</p>
+          <p>{objectInfo.artist}</p>
           </div>
         <div className= 'imageContainer'>
-        <img className= 'image'src={objectInfo.link}
+        <img className= 'image'src={objectInfo.image}
           alt='Random cover'></img>
-          <div className='overlayText'>
+          {/* <div className='overlayText'>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-          </div>
+          </div> */}
           <div className= 'buttons'>
             <span className= 'playIconSwiper1x2' >
              <BsFillPlayCircleFill size="30px"/>
