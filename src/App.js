@@ -14,18 +14,22 @@ import { ListenNow } from './pages/ListenNow';
 import { Radio } from './pages/Radio';
 import { RecentlyAdded } from './pages/RecentlyAdded';
 import { Songs } from './pages/Songs';
-import { MusicPlayer } from './components/MusicPlayer';
-
+import { MusicPlayer } from './components/MusicPlayer/MusicPlayer';
+import { useState } from 'react';
 
 function App() {
+
+  const [playlist, setPlaylist] = useState('')
+  const [i, setI] = useState('')
+
   return (
     <div>
     <LeftMenu/>
-    <MusicPlayer/>
+    <MusicPlayer playlist={playlist} i={i}/>
     <BrowserRouter>
       <Routes>
 
-       <Route path="/" exact element={<Browse/>} />
+       <Route path="/" exact element={<Browse setPlaylist={setPlaylist} setI={setI}/>} />
        <Route path="/albums" exact element={<Albums/>} />
        <Route path="/artists" exact element={<Artists/>} />
        <Route path="/browse" exact element={<Browse/>} />

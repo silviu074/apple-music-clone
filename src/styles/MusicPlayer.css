@@ -29,6 +29,26 @@
     background-color: white;
 }
 
+/* Prev Play Pause Next */
+
 .rhap_main-controls{
-   
+    position: absolute;
+    top:20px;
+    left:130px;
 }
+
+/* Shuffle button */
+
+.rhap_additional-controls{
+    position: absolute;
+    top:25px;
+    left:100px;
+}
+
+/* Volume */
+
+.rhap_volume-container{
+    position: relative;
+    left:50%;
+}
+

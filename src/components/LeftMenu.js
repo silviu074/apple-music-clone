@@ -9,6 +9,8 @@ import { IoMdMicrophone, IoIosAlbums } from "react-icons/io";
 import { IconContext } from 'react-icons';
 
 export const LeftMenu = () => {
+
+
   return (
     <div className='leftMenu' >
 

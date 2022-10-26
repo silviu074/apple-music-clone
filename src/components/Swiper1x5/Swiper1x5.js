@@ -1,17 +1,50 @@
-import React ,{useContext} from 'react'
-import 'swiper/css/bundle';
-import '../../styles/Swiper1x5.css'
+import React , {useContext, useState} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import {Swiper1x5Element} from './Swiper1x5Element'
 import { Context } from '../../pages/Browse';
 import { Navigation, Pagination } from 'swiper';
+import {BsFillPlayCircleFill} from "react-icons/bs";
+import {CgMoreO} from "react-icons/cg";
+import '../../styles/Swiper1x5.css'
+import '../../styles/MainFeed.css'
+import 'swiper/css/bundle';
 
 
-export const ObjectInfo = React.createContext()
+export const Swiper1x5 = ({handleClick}) => {
 
-export const Swiper1x5 = () => {
+  const objectsInfo = useContext(Context)
+  
+  function playSong(index) {
+    // setPlaylist(objectsInfo)
+    // setIndex(index)
+  }
 
-  const objectInfo = useContext(Context)
+// Here we go thru the {Playlist / List of songs} passed from the main component
+// and render each {Playlist[i] / List of songs[i]} inside a SwiperSlide
+
+  let Swiper1x5Element = objectsInfo.map( (object, index) => {
+    return(
+      <SwiperSlide key={index}>
+         <div className= 'swiper1x5Element'>
+           <div className= 'imageContainer'>
+             <img className= 'image'src={object.link}
+                   alt='Random cover'></img>
+              <div className= 'buttons'>
+              <span className= 'playIcon' >
+               <BsFillPlayCircleFill size="30px" onClick={() => {handleClick(objectsInfo, index)}}/>
+              </span>
+              <span className= 'moreIcon'>
+              <CgMoreO size="30px"/>
+              </span>
+              </div>
+            </div>
+           <div>
+           <p>{object.playlistName}</p>
+           <p>{object.playlistArtist}</p>
+           </div>
+       </div>
+       </SwiperSlide>)
+  })
+
 
   return (
     <Swiper spaceBetween={20}  modules={[Navigation, Pagination]} navigation
@@ -33,70 +66,8 @@ export const Swiper1x5 = () => {
         slidesPerView: 5,
       }
     }}>
-    <div>
-
-      <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[0]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[1]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[2]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[3]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[4]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[5]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[6]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[7]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[8]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-       <SwiperSlide>
-        <ObjectInfo.Provider value={objectInfo[9]}>
-          <Swiper1x5Element/>
-         </ObjectInfo.Provider>
-       </SwiperSlide>
-
-
-    </div>
+          {Swiper1x5Element}
+  
     </Swiper>
   )
 }

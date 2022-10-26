@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Swiper1x2 } from '../components/Swiper1x2/Swiper1x2';
 import { Swiper1x5 } from '../components/Swiper1x5/Swiper1x5';
 import { Swiper1x5small } from '../components/Swiper1x5small/Swiper1x5small';
@@ -11,8 +11,23 @@ import '../styles/MainFeed.css'
 
 export const Context = React.createContext()
 
-export const Browse = () => {
+export const Browse = ({setPlaylist, setI}) => {
+
+  const [first, setfirst] = useState([])
+  const [second, setsecond] = useState()
+
+  const handleClick = (objectsInfo , index) => {
+    setfirst(objectsInfo)
+    setsecond(index)
+  }
   
+  useEffect(() => {
+    if(first) {
+         setPlaylist(first)
+         setI(second)}
+            }, [second])
+
+
   return (
     <div className='mainFeedContainer' >
       <div className='mainFeed' >
@@ -32,7 +47,7 @@ export const Browse = () => {
       <h3>You Gotta hear</h3>
       <hr className='solid'/>
       <Context.Provider value={YouGottaHear} >
-        <Swiper1x5/>
+        <Swiper1x5 handleClick={handleClick} />
       </Context.Provider>
 
     </div>
@@ -43,7 +58,7 @@ export const Browse = () => {
       <h3>Now in special audio</h3>
       <hr className='solid'/>
       <Context.Provider value={NowInSpecialAudio} >
-        <Swiper1x5/>
+        <Swiper1x5  handleClick={handleClick} />
       </Context.Provider>
     </div>
 
@@ -69,13 +84,13 @@ export const Browse = () => {
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
-    <div>
+    {/* <div>
       <h3>Hit the gym</h3>
       <hr className='solid'/>
       <Context.Provider value={HitTheGym} >
         <Swiper1x5/>
       </Context.Provider>
-    </div>
+    </div> */}
 
     {/*--------------------------------- Swiper 1x4 --------------------------------- */}
 
