@@ -11,21 +11,23 @@ import '../styles/MainFeed.css'
 
 export const Context = React.createContext()
 
-export const Browse = ({setPlaylist, setI}) => {
+export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
 
-  const [first, setfirst] = useState([])
-  const [second, setsecond] = useState()
+  const [playlist, setPlaylist] = useState([])
+  const [i, setI] = useState()
 
   const handleClick = (objectsInfo , index) => {
-    setfirst(objectsInfo)
-    setsecond(index)
+    setPlaylist(objectsInfo)
+    setI(index)
   }
-  
+
   useEffect(() => {
-    if(first) {
-         setPlaylist(first)
-         setI(second)}
-            }, [second])
+          setMusicPlayerPlaylist(playlist)
+            }, [playlist])
+  
+   useEffect(() => {
+      setMusicPlayerIndex(i)
+            }, [i])          
 
 
   return (
@@ -54,13 +56,13 @@ export const Browse = ({setPlaylist, setI}) => {
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
-    <div>
+    {/* <div>
       <h3>Now in special audio</h3>
       <hr className='solid'/>
       <Context.Provider value={NowInSpecialAudio} >
         <Swiper1x5  handleClick={handleClick} />
       </Context.Provider>
-    </div>
+    </div> */}
 
     {/*--------------------------------- Swiper 2x5 --------------------------------- */}
 

@@ -19,17 +19,20 @@ import { useState } from 'react';
 
 function App() {
 
-  const [playlist, setPlaylist] = useState('')
-  const [i, setI] = useState('')
+  const [musicPlayerPlaylist, setMusicPlayerPlaylist] = useState([])
+  const [musicPlayerIndex, setMusicPlayerIndex] = useState()
 
   return (
     <div>
     <LeftMenu/>
-    <MusicPlayer playlist={playlist} i={i}/>
+    <MusicPlayer musicPlayerPlaylist={musicPlayerPlaylist} musicPlayerIndex={musicPlayerIndex}/>
     <BrowserRouter>
       <Routes>
 
-       <Route path="/" exact element={<Browse setPlaylist={setPlaylist} setI={setI}/>} />
+       <Route path="/" exact element={<Browse 
+           setMusicPlayerPlaylist={setMusicPlayerPlaylist}
+           setMusicPlayerIndex={setMusicPlayerIndex}/>} />
+
        <Route path="/albums" exact element={<Albums/>} />
        <Route path="/artists" exact element={<Artists/>} />
        <Route path="/browse" exact element={<Browse/>} />

@@ -1,4 +1,4 @@
-import React , {useContext, useState} from 'react'
+import React , {useContext} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Context } from '../../pages/Browse';
 import { Navigation, Pagination } from 'swiper';
@@ -12,11 +12,6 @@ import 'swiper/css/bundle';
 export const Swiper1x5 = ({handleClick}) => {
 
   const objectsInfo = useContext(Context)
-  
-  function playSong(index) {
-    // setPlaylist(objectsInfo)
-    // setIndex(index)
-  }
 
 // Here we go thru the {Playlist / List of songs} passed from the main component
 // and render each {Playlist[i] / List of songs[i]} inside a SwiperSlide
@@ -32,14 +27,17 @@ export const Swiper1x5 = ({handleClick}) => {
               <span className= 'playIcon' >
                <BsFillPlayCircleFill size="30px" onClick={() => {handleClick(objectsInfo, index)}}/>
               </span>
-              <span className= 'moreIcon'>
+              <span className= 'moreIcon' onClick={() => { 
+                    navigator.clipboard.writeText(`${object.name} & ${object.artist}`)
+                    alert(`${object.name} & ${object.artist}  was copied to clipboard`)
+                    }}>
               <CgMoreO size="30px"/>
               </span>
               </div>
             </div>
            <div>
-           <p>{object.playlistName}</p>
-           <p>{object.playlistArtist}</p>
+           <p>{object.name}</p>
+           <p>{object.artist}</p>
            </div>
        </div>
        </SwiperSlide>)
