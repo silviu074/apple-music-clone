@@ -6,28 +6,28 @@ import { MusicPlayerEmpty } from '../datatest';
 
 export const MusicPlayer = ({musicPlayerPlaylist,musicPlayerIndex}) => {
 
-  // console.log(musicPlayerPlaylist)
-  // console.log(musicPlayerIndex)
-
-  const [songIndex, setSongIndex] = useState(0);
   const [songs, setSongs] = useState(MusicPlayerEmpty)
+  const [songIndex, setSongIndex] = useState(0)
+  
+
+  // const updateSong = () => {
+  //   setSongs(musicPlayerPlaylist)
+  //   setSongIndex(musicPlayerIndex)
+  // }
 
   // useEffect(() => {
-  //   setSongs(musicPlayerPlaylist)
+  //   updateSong()
+  // }, [musicPlayerPlaylist, musicPlayerIndex])
   
-  // }, [songs])
-  
-  if(typeof(musicPlayerPlaylist) === 'undefined') console.log('e undefined')
-  console.log(typeof(musicPlayerPlaylist))
-  console.log(musicPlayerPlaylist)
+  useEffect(() => {
+       setSongs(musicPlayerPlaylist)
+  }, [musicPlayerPlaylist])
 
   useEffect(() => {
-    if( (typeof(musicPlayerPlaylist) != 'undefined') || (musicPlayerPlaylist != [])) {
-       console.log('x')
-      //  setSongs(musicPlayerPlaylist)
-    }
-  }, [songs])
+    setSongIndex(musicPlayerIndex)
+}, [musicPlayerIndex])
 
+console.log(songs[songIndex])
 
   const handleClickPrevious = () => {
     setSongIndex((currentSong) =>
@@ -50,10 +50,10 @@ export const MusicPlayer = ({musicPlayerPlaylist,musicPlayerIndex}) => {
       
          <AudioPlayer
             style={{ borderRadius: "5px", width: "400px", height: "50px" }}
-            src={songs[songIndex].src}
+            src={songs[songIndex]?.src}
             showSkipControls={true}
             showJumpControls={false}
-            header={`Now playing: ${songs[songIndex].name} by ${songs[songIndex].artist}`}
+            header={`Now playing: ${songs[songIndex]?.name} by ${songs[songIndex]?.artist}`}
             onClickPrevious={handleClickPrevious}
             onClickNext={handleClickNext}
             onEnded={handleClickNext}

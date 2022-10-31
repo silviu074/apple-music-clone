@@ -1,11 +1,11 @@
 import React , {useContext} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Context } from '../../pages/Browse';
+import { Context } from '../pages/Browse';
 import { Navigation, Pagination } from 'swiper';
 import {BsFillPlayCircleFill} from "react-icons/bs";
 import {CgMoreO} from "react-icons/cg";
-import '../../styles/Swiper1x5.css'
-import '../../styles/MainFeed.css'
+import '../styles/Swiper1x5.css'
+import '../styles/MainFeed.css'
 import 'swiper/css/bundle';
 
 
@@ -21,7 +21,7 @@ export const Swiper1x5 = ({handleClick}) => {
       <SwiperSlide key={index}>
          <div className= 'swiper1x5Element'>
            <div className= 'imageContainer'>
-             <img className= 'image'src={object.link}
+             <img className= 'image'src={object.imageLink}
                    alt='Random cover'></img>
               <div className= 'buttons'>
               <span className= 'playIcon' >
@@ -29,7 +29,7 @@ export const Swiper1x5 = ({handleClick}) => {
               </span>
               <span className= 'moreIcon' onClick={() => { 
                     navigator.clipboard.writeText(`${object.name} & ${object.artist}`)
-                    alert(`${object.name} & ${object.artist}  was copied to clipboard`)
+                    alert(`${object.name} - ${object.artist}  was copied to clipboard`)
                     }}>
               <CgMoreO size="30px"/>
               </span>

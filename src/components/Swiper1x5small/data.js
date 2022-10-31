@@ -43,43 +43,45 @@ export const AppleMusicRadio=[
 
 export const MusicByMood=[
   {
-      name: 'Essentials #1',
-      link: 'https://source.unsplash.com/random/300x200/?blur&1'
+      name: 'Name #1',
+      artist: "Artist #1",
+      link: 'https://source.unsplash.com/random/300x200/?blur&1',
+      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
     },
     {
-      name: 'Essentials #2',
+      name: 'Name #2',
       link: 'https://source.unsplash.com/random/300x200/?blur&2'
     },
     {
-      name: 'Essentials #3',
+      name: 'Name #3',
       link: 'https://source.unsplash.com/random/300x200/?blur&3'
     },
     {
-      name: 'Essentials #4',
+      name: 'Name #4',
       link: 'https://source.unsplash.com/random/300x200/?blur&4'
     },
     {
-      name: 'Essentials #5',
+      name: 'Name #5',
       link: 'https://source.unsplash.com/random/300x200/?blur&5'
     },
     {
-      name: 'Essentials #6',
+      name: 'Name #6',
       link: 'https://source.unsplash.com/random/300x200/?blur&6'
     },
     {
-      name: 'Essentials #7',
+      name: 'Name #7',
       link: 'https://source.unsplash.com/random/300x200/?blur&7'
     },
     {
-      name: 'Essentials #8',
+      name: 'Name #8',
       link: 'https://source.unsplash.com/random/300x200/?blur&8'
     },
     {
-      name: 'Essentials #9',
+      name: 'Name #9',
       link: 'https://source.unsplash.com/random/300x200/?blur&9'
     },
     {
-      name: 'Essentials #10',
+      name: 'Name #10',
       link: 'https://source.unsplash.com/random/300x200/?blur&10'
     }
 ]

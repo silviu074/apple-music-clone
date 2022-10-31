@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import { Swiper1x2 } from '../components/Swiper1x2/Swiper1x2';
-import { Swiper1x5 } from '../components/Swiper1x5/Swiper1x5';
+import { Swiper1x5 } from '../components/Swiper1x5';
 import { Swiper1x5small } from '../components/Swiper1x5small/Swiper1x5small';
 import { Swiper2x5 } from '../components/Swiper2x5/Swiper2x5';
-import { NowInSpecialAudio, YouGottaHear, HitTheGym } from '../components/Swiper1x5/data';
+import { NowInSpecialAudio, YouGottaHear, HitTheGym } from '../data';
 import { NewMusic } from '../components/Swiper2x5/data';
 import { AppleMusicRadio, MusicByMood } from '../components/Swiper1x5small/data';
 import { Featured } from '../components/Swiper1x2/data';
@@ -19,6 +19,7 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
   const handleClick = (objectsInfo , index) => {
     setPlaylist(objectsInfo)
     setI(index)
+    
   }
 
   useEffect(() => {
@@ -56,13 +57,13 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
-    {/* <div>
+    <div>
       <h3>Now in special audio</h3>
       <hr className='solid'/>
       <Context.Provider value={NowInSpecialAudio} >
         <Swiper1x5  handleClick={handleClick} />
       </Context.Provider>
-    </div> */}
+    </div>
 
     {/*--------------------------------- Swiper 2x5 --------------------------------- */}
 
@@ -86,13 +87,13 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
-    {/* <div>
+    <div>
       <h3>Hit the gym</h3>
       <hr className='solid'/>
       <Context.Provider value={HitTheGym} >
-        <Swiper1x5/>
+        <Swiper1x5 handleClick={handleClick}/>
       </Context.Provider>
-    </div> */}
+    </div>
 
     {/*--------------------------------- Swiper 1x4 --------------------------------- */}
 
