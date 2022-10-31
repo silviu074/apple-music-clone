@@ -70,7 +70,20 @@ hr.solid {
     cursor: pointer;
   }
 
+/* React swiper customization */
 
+.swiper-button-next{
+    color:red;
+    height: 150%;
+}
+
+.swiper:hover +.swiper-button-next{
+    display: inline-block;
+}
+
+/* .swiper-button-next::after{
+    color: red;
+  }  */
 
 
 @media only screen and (max-width: 480px) {

@@ -1,11 +1,11 @@
 import React , {useContext} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Context } from '../pages/Browse';
+import { Context } from '../../pages/Browse';
 import { Navigation, Pagination } from 'swiper';
 import {BsFillPlayCircleFill} from "react-icons/bs";
 import {CgMoreO} from "react-icons/cg";
-import '../styles/Swiper1x5.css'
-import '../styles/MainFeed.css'
+import '../../styles/Swiper1x5.css'
+import '../../styles/MainFeed.css'
 import 'swiper/css/bundle';
 
 
@@ -16,7 +16,7 @@ export const Swiper1x5 = ({handleClick}) => {
 // Here we go thru the {Playlist / List of songs} passed from the main component
 // and render each {Playlist[i] / List of songs[i]} inside a SwiperSlide
 
-  let Swiper1x5Element = objectsInfo.map( (object, index) => {
+  let swiper1x5Element = objectsInfo.map( (object, index) => {
     return(
       <SwiperSlide key={index}>
          <div className= 'swiper1x5Element'>
@@ -24,8 +24,8 @@ export const Swiper1x5 = ({handleClick}) => {
              <img className= 'image'src={object.imageLink}
                    alt='Random cover'></img>
               <div className= 'buttons'>
-              <span className= 'playIcon' >
-               <BsFillPlayCircleFill size="30px" onClick={() => {handleClick(objectsInfo, index)}}/>
+              <span className= 'playIcon' onClick={() => {handleClick(objectsInfo, index)}}>
+               <BsFillPlayCircleFill size="30px"/>
               </span>
               <span className= 'moreIcon' onClick={() => { 
                     navigator.clipboard.writeText(`${object.name} & ${object.artist}`)
@@ -64,7 +64,7 @@ export const Swiper1x5 = ({handleClick}) => {
         slidesPerView: 5,
       }
     }}>
-          {Swiper1x5Element}
+          {swiper1x5Element}
   
     </Swiper>
   )

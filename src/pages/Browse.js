@@ -1,12 +1,17 @@
 import React, {useState, useEffect} from 'react'
-import { Swiper1x2 } from '../components/Swiper1x2/Swiper1x2';
-import { Swiper1x5 } from '../components/Swiper1x5';
-import { Swiper1x5small } from '../components/Swiper1x5small/Swiper1x5small';
-import { Swiper2x5 } from '../components/Swiper2x5/Swiper2x5';
-import { NowInSpecialAudio, YouGottaHear, HitTheGym } from '../data';
-import { NewMusic } from '../components/Swiper2x5/data';
-import { AppleMusicRadio, MusicByMood } from '../components/Swiper1x5small/data';
-import { Featured } from '../components/Swiper1x2/data';
+
+import { Swiper1x2 } from '../components/Swipers/Swiper1x2';
+import { Swiper1x5 } from '../components/Swipers/Swiper1x5';
+import { Swiper1x5small } from '../components/Swipers/Swiper1x5small';
+import { Swiper2x5 } from '../components/Swipers/Swiper2x5';
+import { 
+  NowInSpecialAudio,
+   YouGottaHear, 
+   HitTheGym, 
+   NewMusic,
+    MusicByMood,
+     AppleMusicRadio, 
+     Featured } from '../data';
 import '../styles/MainFeed.css'
 
 export const Context = React.createContext()
@@ -41,7 +46,7 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
 
       <h3>Today's Hits</h3>
       <Context.Provider value={Featured} >
-        <Swiper1x2/>
+        <Swiper1x2 handleClick={handleClick}/>
       </Context.Provider>
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
@@ -71,17 +76,17 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
       <h3>New Music</h3>
       <hr className='solid'/>
       <Context.Provider value={NewMusic} >
-        <Swiper2x5/>
+        <Swiper2x5 handleClick={handleClick}/>
       </Context.Provider>
     </div>
 
-    {/*--------------------------------- Swiper 1x4 --------------------------------- */}
+    {/*--------------------------------- Swiper 1x5 small --------------------------------- */}
 
     <div>
       <h3>Apple Music Radio</h3>
       <hr className='solid'/>
       <Context.Provider value={AppleMusicRadio} >
-        <Swiper1x5small/>
+        <Swiper1x5small handleClick={handleClick}/>
       </Context.Provider>
     </div>
 
@@ -95,13 +100,13 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
       </Context.Provider>
     </div>
 
-    {/*--------------------------------- Swiper 1x4 --------------------------------- */}
+    {/*--------------------------------- Swiper 1x5 small --------------------------------- */}
 
     <div>
       <h3>Music by Mood</h3>
       <hr className='solid'/>
       <Context.Provider value={MusicByMood} >
-        <Swiper1x5small/>
+        <Swiper1x5small handleClick={handleClick}/>
       </Context.Provider>
     </div>
     </div>
