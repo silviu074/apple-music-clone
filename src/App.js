@@ -14,7 +14,7 @@ import { ListenNow } from './pages/ListenNow';
 import { Radio } from './pages/Radio';
 import { RecentlyAdded } from './pages/RecentlyAdded';
 import { Songs } from './pages/Songs';
-import { MusicPlayer } from './components/MusicPlayer/MusicPlayer';
+import { MusicPlayer } from './components/MusicPlayer';
 import { useState } from 'react';
 
 function App() {

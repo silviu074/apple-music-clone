@@ -3,7 +3,7 @@
     width:85%;
     float: right;
     max-width: calc(100% - 200px);
-    
+    margin: 100px auto 100px auto;
 }
 
 .mainFeed{
@@ -69,21 +69,6 @@ hr.solid {
     color: red;
     cursor: pointer;
   }
-
-/* React swiper customization */
-
-.swiper-button-next{
-    color:red;
-    height: 150%;
-}
-
-.swiper:hover +.swiper-button-next{
-    display: inline-block;
-}
-
-/* .swiper-button-next::after{
-    color: red;
-  }  */
 
 
 @media only screen and (max-width: 480px) {

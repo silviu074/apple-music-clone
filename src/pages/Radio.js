@@ -2,6 +2,10 @@ import React from 'react'
 
 export const Radio = () => {
   return (
-    <div>Radio</div>
+    <div className='mainFeedContainer' >
+      <div className='mainFeed' >
+      <h1>Radio</h1>
+      </div>
+    </div>
   )
 }

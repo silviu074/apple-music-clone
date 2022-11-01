@@ -1,20 +1,19 @@
-import React , {useContext} from 'react'
+import React , { useContext } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Context } from '../../pages/Browse';
 import { Navigation, Pagination } from 'swiper';
-import {BsFillPlayCircleFill} from "react-icons/bs";
-import {CgMoreO} from "react-icons/cg";
-import '../../styles/Swiper1x5.css'
+import { BsFillPlayCircleFill } from "react-icons/bs";
+import { CgMoreO } from "react-icons/cg";
+import '../../styles/Swipers/Swiper1x5.css'
 import '../../styles/MainFeed.css'
 import 'swiper/css/bundle';
-
 
 export const Swiper1x5 = ({handleClick}) => {
 
   const objectsInfo = useContext(Context)
 
-// Here we go thru the {Playlist / List of songs} passed from the main component
-// and render each {Playlist[i] / List of songs[i]} inside a SwiperSlide
+// this component goes thru the playlist passed from the main component 
+// and render each object inside a Slide
 
   let swiper1x5Element = objectsInfo.map( (object, index) => {
     return(
@@ -47,15 +46,15 @@ export const Swiper1x5 = ({handleClick}) => {
   return (
     <Swiper spaceBetween={20}  modules={[Navigation, Pagination]} navigation
        breakpoints={{
-        // if the width is >= 280 display 5 slides (mobile)
+        // if the width is >= 280 display 2 slides (mobile)
       280: {
         slidesPerView: 2,
       },
-      // if the width is >= 480 display 5 slides (small tablet)
+      // if the width is >= 480 display 3 slides (small tablet)
       480: {
         slidesPerView: 3,
       },
-      // if the width is >= 720 display 5 slides (tablet)
+      // if the width is >= 720 display 4 slides (tablet)
       720: {
         slidesPerView: 4,
       },

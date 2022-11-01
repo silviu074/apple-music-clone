@@ -2,11 +2,16 @@
     position: fixed;
     right:0;
     text-align: left;
-    background-color: rgb(54, 54, 54);
+    background-color: rgba(48, 48, 48, 0.95);
     width:85%;
     max-width: calc(100% - 200px);
     z-index: 2;
 }
+
+.rhap_header {
+    display: flex;
+    margin: auto;
+}    
 
 /* --------------------------------- rhap => React h5 audio player ---------------------------------  */
 

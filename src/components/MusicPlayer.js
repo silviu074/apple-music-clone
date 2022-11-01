@@ -1,23 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import 'react-h5-audio-player/lib/styles.css';
-import '../../styles/MusicPlayer.css'
+import '../styles/MusicPlayer.css'
 import AudioPlayer from 'react-h5-audio-player';
-import { MusicPlayerEmpty } from '../datatest';
+import { FaApple } from "react-icons/fa";
 
 export const MusicPlayer = ({musicPlayerPlaylist,musicPlayerIndex}) => {
 
-  const [songs, setSongs] = useState(MusicPlayerEmpty)
+  const [songs, setSongs] = useState([])
   const [songIndex, setSongIndex] = useState(0)
-  
-
-  // const updateSong = () => {
-  //   setSongs(musicPlayerPlaylist)
-  //   setSongIndex(musicPlayerIndex)
-  // }
-
-  // useEffect(() => {
-  //   updateSong()
-  // }, [musicPlayerPlaylist, musicPlayerIndex])
   
   useEffect(() => {
        setSongs(musicPlayerPlaylist)
@@ -25,7 +15,7 @@ export const MusicPlayer = ({musicPlayerPlaylist,musicPlayerIndex}) => {
 
   useEffect(() => {
     setSongIndex(musicPlayerIndex)
-}, [musicPlayerIndex])
+  }, [musicPlayerIndex])
 
 console.log(songs[songIndex])
 
@@ -45,6 +35,13 @@ console.log(songs[songIndex])
     // else go back to the first {songs[0]}
   };
 
+  function header(songs, songIndex){
+    if(typeof(songIndex) === 'undefined') {
+      return <i><FaApple size='25px'/></i>
+    }
+    else return `Now playing: ${songs[songIndex]?.name} by ${songs[songIndex]?.artist}`
+}
+
   return (
     <div className='musicPlayerContainer' >
       
@@ -53,7 +50,7 @@ console.log(songs[songIndex])
             src={songs[songIndex]?.src}
             showSkipControls={true}
             showJumpControls={false}
-            header={`Now playing: ${songs[songIndex]?.name} by ${songs[songIndex]?.artist}`}
+            header={header(songs, songIndex)}
             onClickPrevious={handleClickPrevious}
             onClickNext={handleClickNext}
             onEnded={handleClickNext}

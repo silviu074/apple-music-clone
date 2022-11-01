@@ -45,7 +45,13 @@
     position: absolute;
     left:3%;
     bottom:5%;
+    width:60%;
     display: block;
     color: white;
 }
 
+@media only screen and (max-width: 720px) {
+    .overlayText {
+       display: none;
+    }
+}    

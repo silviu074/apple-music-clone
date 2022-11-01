@@ -1,6 +1,7 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom';
 import '../styles/LeftMenu.css'
-import { FaApple} from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
 import { FiRadio, FiClock } from "react-icons/fi";
 import { SiItunes } from "react-icons/si";
 import { AiOutlineUnorderedList } from "react-icons/ai";
@@ -10,6 +11,12 @@ import { IconContext } from 'react-icons';
 
 export const LeftMenu = () => {
 
+
+
+    function leftMenuNavigation(pageAddress){
+    //  <Navigate to={pageAddress} replace={true} />
+    console.log(pageAddress)
+    }
 
   return (
     <div className='leftMenu' >
@@ -28,12 +35,14 @@ export const LeftMenu = () => {
 
         <IconContext.Provider value={{color:'rgb(247, 62, 62)'}}>
         
-        <div className='iconTextContainer'>
+        <div className='iconTextContainer' 
+                onClick={ () => {return(<Navigate to={'/listen-now'} replace={true} />)} } >
             <i className='leftMenuIcon'><BsPlayCircle /></i>
             <p>Listen Now</p>
         </div>
 
-        <div className='iconTextContainer'>
+        <div className='iconTextContainer' 
+                onClick={ () => {<Navigate to={'/browse'} replace={true} />} } >
             <i className='leftMenuIcon'><AiOutlineUnorderedList/></i>
             <p>Browse</p>
         </div>
