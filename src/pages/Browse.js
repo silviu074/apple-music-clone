@@ -6,9 +6,9 @@ import { Swiper1x5small } from '../components/Swipers/Swiper1x5small';
 import { Swiper2x5 } from '../components/Swipers/Swiper2x5';
 import { 
   DailyTop100,
-   cityCharts, 
-   HitTheGym, 
-   NewMusic,
+   CityCharts, 
+   TimeForBed, 
+   NowInSpecialAudio,
     MusicByMood,
      AppleMusicRadio, 
      Featured } from '../data';
@@ -44,20 +44,20 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
 
       {/*--------------------------------- Featured content --------------------------------- */}
 
-      <h3>Today's Hits</h3>
+      <h3>Today's Favourites</h3>
       <Context.Provider value={Featured} >
         <Swiper1x2 handleClick={handleClick}/>
       </Context.Provider>
+      <hr className='solid'/>
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
     <div>
       <h3>City Charts</h3>
-      <hr className='solid'/>
-      <Context.Provider value={cityCharts} >
+      <Context.Provider value={CityCharts} >
         <Swiper1x5 handleClick={handleClick} />
       </Context.Provider>
-
+      <hr className='solid'/>
     </div>
 
 
@@ -65,50 +65,50 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
 
     <div>
       <h3>Apple Music Radio</h3>
-      <hr className='solid'/>
       <Context.Provider value={AppleMusicRadio} >
         <Swiper1x5small handleClick={handleClick}/>
       </Context.Provider>
+      <hr className='solid'/>
     </div>
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
     <div>
-      <h3>Now in special audio</h3>
-      <hr className='solid'/>
+      <h3>Now in Special Audio</h3>
       <Context.Provider value={DailyTop100} >
         <Swiper1x5  handleClick={handleClick} />
       </Context.Provider>
+      <hr className='solid'/>
     </div>
 
     {/*--------------------------------- Swiper 2x5 --------------------------------- */}
 
     <div>
       <h3>New Music</h3>
-      <hr className='solid'/>
-      <Context.Provider value={NewMusic} >
+      <Context.Provider value={NowInSpecialAudio} >
         <Swiper2x5 handleClick={handleClick}/>
       </Context.Provider>
+      <hr className='solid'/>
     </div>
 
 {/*--------------------------------- Swiper 1x5 small --------------------------------- */}
 
 <div>
       <h3>Music by Mood</h3>
-      <hr className='solid'/>
       <Context.Provider value={MusicByMood} >
         <Swiper1x5small handleClick={handleClick}/>
       </Context.Provider>
+      <hr className='solid'/>
     </div>
 
     {/*--------------------------------- Swiper 1x5 --------------------------------- */}
 
     <div>
-      <h3>Hit the gym</h3>
-      <hr className='solid'/>
-      <Context.Provider value={HitTheGym} >
+      <h3>Time for Bed</h3>
+      <Context.Provider value={TimeForBed} >
         <Swiper1x5 handleClick={handleClick}/>
       </Context.Provider>
+      <hr className='solid'/>
     </div>
 
     

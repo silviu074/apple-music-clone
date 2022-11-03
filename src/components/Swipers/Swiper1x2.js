@@ -28,7 +28,7 @@ export const Swiper1x2 = ({handleClick}) => {
               </span>
             </div>
             <div className='overlayText'>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            <p>{object.description}</p>
             </div>
             </div>
          </div>

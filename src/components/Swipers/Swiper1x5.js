@@ -58,9 +58,13 @@ export const Swiper1x5 = ({handleClick}) => {
       720: {
         slidesPerView: 4,
       },
-      // if the width is >= 1080 display 5 slides (desktop)
+      // if the width is >= 1080 display 5 slides (tablet)
       1080: {
         slidesPerView: 5,
+      },
+      // if the width is >= 1366 display 6 slides (desktop)
+      1366: {
+        slidesPerView: 6,
       }
     }}>
           {swiper1x5Element}

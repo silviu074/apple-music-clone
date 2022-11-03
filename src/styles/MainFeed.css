@@ -21,6 +21,7 @@
 
 hr.solid {
     border: 0.11px solid rgb(63, 63, 63);
+    margin:2% auto 4% auto;
   }
 
 .image{
@@ -68,7 +69,25 @@ hr.solid {
 .playIcon:hover, .moreIcon:hover {
     color: red;
     cursor: pointer;
-  }
+}
+
+/* Swiper API custom CSS start */
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    display: none;
+}
+
+.swiper-wrapper:hover ~ .swiper-button-next::after {
+    display: block;
+    color: white;
+}
+
+.swiper-wrapper:hover ~ .swiper-button-prev::after {
+    display: block;
+    color: white;
+}
+
+/* Swiper API custom CSS end */
 
 
 @media only screen and (max-width: 480px) {

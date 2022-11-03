@@ -39,7 +39,7 @@ console.log(songs[songIndex])
     if(typeof(songIndex) === 'undefined') {
       return <i><FaApple size='25px'/></i>
     }
-    else return `Now playing: ${songs[songIndex]?.name} by ${songs[songIndex]?.artist}`
+    else return `${songs[songIndex]?.name} - ${songs[songIndex]?.artist}`
 }
 
   return (
