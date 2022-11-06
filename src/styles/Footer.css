@@ -1,8 +1,29 @@
 .footerContainer{
+    position:absolute;
     text-align: left;
     background-color: rgb(58, 58, 58);
     width:85%;
+    height:200px;
     max-width: calc(100% - 200px);
-    float: right;
-    margin-bottom:0;
+    bottom: 0;
+    right:0;
+}
+
+.footerText{
+    display: inline-block;
+    color:rgb(148, 148, 148);
+}
+
+.footerText > a {
+    color:white;
+    
+}
+
+@media only screen and (max-width: 650px) {
+.footerContainer{
+    max-width: none;
+    width: 100%;
+    
+}
+
 }

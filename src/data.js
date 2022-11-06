@@ -150,319 +150,319 @@ export const Featured =[
     }
 ]
 
-//  ---------------------------------- Swiper 1x5 ------------------------------------
+//  ---------------------------------- Swiper 1x6 ------------------------------------
 
 export const CityCharts =[
     {
-        name: "Top 25: Budapest",
-        artist: "Apple Music",
+        name: 'Top 25: Budapest',
+        artist: 'Apple Music',
         imageLink: `${Budapest}`,
-        src: "https://www.bensound.com/bensound-music/bensound-inspire.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-inspire.mp3'
       },
       {
-        name: "Top 25: Istanbul",
-        artist: "Apple Music",
+        name: 'Top 25: Istanbul',
+        artist: 'Apple Music',
         imageLink: `${Istanbul}`,
-        src: "https://www.bensound.com/bensound-music/bensound-ukulele.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-ukulele.mp3'
       },
       {
-        name: "Top 25: Kyev",
-        artist: "Apple Music",
+        name: 'Top 25: Kyev',
+        artist: 'Apple Music',
         imageLink: `${Kyev}`,
-        src: "https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3'
       },
       {
-        name: "Top 25: London",
-        artist: "Apple Music",
+        name: 'Top 25: London',
+        artist: 'Apple Music',
         imageLink: `${London}`,
-        src: "https://www.bensound.com/bensound-music/bensound-elevate.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-elevate.mp3'
       },
       {
-        name: "Top 25: Los Angeles",
-        artist: "Apple Music",
+        name: 'Top 25: Los Angeles',
+        artist: 'Apple Music',
         imageLink: `${LosAngeles}`,
-        src: "https://www.bensound.com/bensound-music/bensound-onceagain.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-onceagain.mp3'
       },
       {
-        name: "Top 25: New York",
-        artist: "Apple Music",
+        name: 'Top 25: New York',
+        artist: 'Apple Music',
         imageLink: `${NewYork}`,
-        src: "https://www.bensound.com/bensound-music/bensound-photoalbum.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-photoalbum.mp3'
       },
       {
-        name: "Top 25: Paris",
-        artist: "Apple Music",
+        name: 'Top 25: Paris',
+        artist: 'Apple Music',
         imageLink: `${Paris}`,
-        src: "https://www.bensound.com/bensound-music/bensound-memories.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-memories.mp3'
       },
       {
-        name: "Top 25: Prague",
-        artist: "Apple Music",
+        name: 'Top 25: Prague',
+        artist: 'Apple Music',
         imageLink: `${Prague}`,
-        src: "https://www.bensound.com/bensound-music/bensound-funday.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-funday.mp3'
       },
       {
-        name: "Top 25: Seoul",
-        artist: "Apple Music",
+        name: 'Top 25: Seoul',
+        artist: 'Apple Music',
         imageLink: `${Seoul}`,
-        src: "https://www.bensound.com/bensound-music/bensound-clapandyell.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-clapandyell.mp3'
       },
       {
-        name: "Top 25: Warsaw",
-        artist: "Apple Music",
+        name: 'Top 25: Warsaw',
+        artist: 'Apple Music',
         imageLink: `${Warsaw}`,
-        src: "https://www.bensound.com/bensound-music/bensound-happyrock.mp3"
+        src: 'https://www.bensound.com/bensound-music/bensound-happyrock.mp3'
       }
 ]
 
 export const DailyTop100=[
   {
-      name: "Top 100: Australia",
-      artist: "Apple Music",
+      name: 'Top 100: Australia',
+      artist: 'Apple Music',
       imageLink: `${Australia}`,
-      src: "https://www.bensound.com/bensound-music/bensound-perception.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-perception.mp3'
     },
     {
-      name: "Top 100: Canada",
-      artist: "Apple Music",
+      name: 'Top 100: Canada',
+      artist: 'Apple Music',
       imageLink: `${Canada}`,
-      src: "https://www.bensound.com/bensound-music/bensound-beyondtheline.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-beyondtheline.mp3'
     },
     {
-      name: "Top 100: France",
-      artist: "Apple Music",
+      name: 'Top 100: France',
+      artist: 'Apple Music',
       imageLink: `${France}`,
-      src: "https://www.bensound.com/bensound-music/bensound-anewbeginning.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-anewbeginning.mp3'
     },
     {
-      name: "Top 100: Global",
-      artist: "Apple Music",
+      name: 'Top 100: Global',
+      artist: 'Apple Music',
       imageLink: `${Global}`,
-      src: "https://www.bensound.com/bensound-music/bensound-littleidea.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-littleidea.mp3'
     },
     {
-      name: "Top 100: Japan",
-      artist: "Apple Music",
+      name: 'Top 100: Japan',
+      artist: 'Apple Music',
       imageLink: `${Japan}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dubstep.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dubstep.mp3'
     },
     {
-      name: "Top 100: Mexico",
-      artist: "Apple Music",
+      name: 'Top 100: Mexico',
+      artist: 'Apple Music',
       imageLink: `${Mexico}`,
-      src: "https://www.bensound.com/bensound-music/bensound-badass.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-badass.mp3'
     },
     {
-      name: "Top 100: Romania",
-      artist: "Apple Music",
+      name: 'Top 100: Romania',
+      artist: 'Apple Music',
       imageLink: `${Romania}`,
-      src: "https://www.bensound.com/bensound-music/bensound-goinghigher.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-goinghigher.mp3'
     },
     {
-      name: "Top 100: Spain",
-      artist: "Apple Music",
+      name: 'Top 100: Spain',
+      artist: 'Apple Music',
       imageLink: `${Spain}`,
-      src: "https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-acousticbreeze.mp3'
     },
     {
-      name: "Top 100: UK",
-      artist: "Apple Music",
+      name: 'Top 100: UK',
+      artist: 'Apple Music',
       imageLink: `${UK}`,
-      src: "https://www.bensound.com/bensound-music/bensound-slowmotion.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-slowmotion.mp3'
     },
     {
-      name: "Top 100: USA",
-      artist: "Apple Music",
+      name: 'Top 100: USA',
+      artist: 'Apple Music',
       imageLink: `${USA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-endlessmotion.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-endlessmotion.mp3'
     }
 ]
 
 export const TimeForBed =[
   {
-      name: "Instrumental Beats",
-      artist: "Apple Music",
+      name: 'Instrumental Beats',
+      artist: 'Apple Music',
       imageLink: `${Beat}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "Sleep Cycle",
-      artist: "Apple Music",
+      name: 'Sleep Cycle',
+      artist: 'Apple Music',
       imageLink: `${Cycle}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "JazZz",
-      artist: "Apple Music",
+      name: 'JazZz',
+      artist: 'Apple Music',
       imageLink: `${Jazzz}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "Meditation",
-      artist: "Apple Music",
+      name: 'Meditation',
+      artist: 'Apple Music',
       imageLink: `${Meditation}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "Nature",
-      artist: "Apple Music",
+      name: 'Nature',
+      artist: 'Apple Music',
       imageLink: `${Nature}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "Ocean",
-      artist: "Apple Music",
+      name: 'Ocean',
+      artist: 'Apple Music',
       imageLink: `${Ocean}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "Piano",
-      artist: "Apple Music",
+      name: 'Piano',
+      artist: 'Apple Music',
       imageLink: `${Piano}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "River",
-      artist: "Apple Music",
+      name: 'River',
+      artist: 'Apple Music',
       imageLink: `${River}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "Sleep Waves",
-      artist: "Apple Music",
+      name: 'Sleep Waves',
+      artist: 'Apple Music',
       imageLink: `${SleepWaves}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
-      name: "White Noise",
-      artist: "Apple Music",
+      name: 'White Noise',
+      artist: 'Apple Music',
       imageLink: `${WhiteNoise}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     }
 ]
 
-//  ---------------------------------- Swiper 2x5 ------------------------------------
+//  ---------------------------------- Swiper 2x6 ------------------------------------
 
 export const NowInSpecialAudio =[
   {
       name: 'BORN PINK',
       artist: 'BLACKPINK',
       imageLink: `${Blackpink}`,
-      src: "https://www.bensound.com/bensound-music/bensound-highoctane.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-highoctane.mp3'
     },
     {
       name: 'CHARLIE',
       artist: 'Charlie Puth',
       imageLink: `${Charlie}`,
-      src: "https://www.bensound.com/bensound-music/bensound-erf.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-erf.mp3'
     },
     {
       name: 'Classical in Spatial Audio',
       artist: 'Apple Music',
       imageLink: `${ClassicalSA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-punky.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-punky.mp3'
     },
     {
       name: 'Dance in Spatial Audio',
       artist: 'Apple Music',
       imageLink: `${DanceSA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-birthofahero.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-birthofahero.mp3'
     },
     {
       name: 'danceXL',
       artist: 'Apple Music',
       imageLink: `${DanceXL}`,
-      src: "https://www.bensound.com/bensound-music/bensound-smallguitar.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-smallguitar.mp3'
     },
     {
       name: 'MAYBE IN ANOTHER LIFE',
       artist: 'easy life',
       imageLink: `${EasyLife}`,
-      src: "https://www.bensound.com/bensound-music/bensound-buddy.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-buddy.mp3'
     },
     {
       name: 'Entergalactic',
       artist: 'Kid Cudi',
       imageLink: `${Entergalactic}`,
-      src: "https://www.bensound.com/bensound-music/bensound-cute.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-cute.mp3'
     },
     {
       name: 'Hip-Hop in Spatial Audio',
       artist: 'Apple Music',
       imageLink: `${HipHopSA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-happiness.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-happiness.mp3'
     },
     {
       name: 'Hits in Spatial Audio',
       artist: 'Apple Music',
       imageLink: `${HitsSA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-moose.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-moose.mp3'
     },
     {
       name: 'Apple Music Sessions',
       artist: 'Ingrid Andress',
       imageLink: `${Ingrid}`,
-      src: "https://www.bensound.com/bensound-music/bensound-scifi.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-scifi.mp3'
     },
     {
       name: 'It`s only me',
       artist: 'Lil Baby',
       imageLink: `${ItsOnlyMe}`,
-      src: "https://www.bensound.com/bensound-music/bensound-betterdays.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-betterdays.mp3'
     },
     {
       name: 'Apple Music Sessions',
       artist: 'Liam Gallagher',
       imageLink: `${Liam}`,
-      src: "https://www.bensound.com/bensound-music/bensound-thejazzpiano.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-thejazzpiano.mp3'
     },
     {
       name: 'Made for Special Audio',
       artist: 'Apple Music',
       imageLink: `${MadeForSA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-jazzcomedy.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-jazzcomedy.mp3'
     },
     {
       name: 'Stick Season',
       artist: 'Noah Kahan',
       imageLink: `${Nessa}`,
-      src: "https://www.bensound.com/bensound-music/bensound-funnysong.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-funnysong.mp3'
     },
     {
       name: 'young forever',
       artist: 'Nessa Barrett',
       imageLink: `${Noah}`,
-      src: "https://www.bensound.com/bensound-music/bensound-dreams.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
     },
     {
       name: 'Hideous Bastard',
       artist: 'Oliver Sim',
       imageLink: `${Oliver}`,
-      src: "https://www.bensound.com/bensound-music/bensound-theelevatorbossanova.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-theelevatorbossanova.mp3'
     },
     {
       name: 'Pop in Special Audio',
       artist: 'Apple Music',
       imageLink: `${PopSA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-ofeliasdream.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-ofeliasdream.mp3'
     },
     {
       name: 'Rock in Special Audio',
       artist: 'Apple Music',
       imageLink: `${RockSA}`,
-      src: "https://www.bensound.com/bensound-music/bensound-adaytoremember.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-adaytoremember.mp3'
     },
     {
       name: 'Apple Music Sessions',
       artist: 'The Libertines',
       imageLink: `${TheLibertines}`,
-      src: "https://www.bensound.com/bensound-music/bensound-instinct.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-instinct.mp3'
     },
     {
       name: 'Unholy',
       artist: 'Sam Smith and Kim Petras',
       imageLink: `${Unholy}`,
-      src: "https://www.bensound.com/bensound-music/bensound-relaxing.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-relaxing.mp3'
     }
 ]
 
@@ -473,123 +473,123 @@ export const AppleMusicRadio=[
       name: 'Chill Radio',
       artist: 'Apple Music',
       imageLink: `${Chill}`,
-      src: "https://www.bensound.com/bensound-music/bensound-pianomoment.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-pianomoment.mp3'
     },
     {
       name: 'DnB Radio',
       artist: 'Apple Music',
       imageLink: `${DnB}`,
-      src: "https://www.bensound.com/bensound-music/bensound-funkysuspense.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-funkysuspense.mp3'
     },
     {
       name: 'Hip Hop Radio',
       artist: 'Apple Music',
       imageLink: `${HipHop}`,
-      src: "https://www.bensound.com/bensound-music/bensound-hipjazz.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-hipjazz.mp3'
     },
     {
       name: 'Jazz Radio',
       artist: 'Apple Music',
       imageLink: `${Jazz}`,
-      src: "https://www.bensound.com/bensound-music/bensound-summer.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-summer.mp3'
     },
     {
       name: 'Punk Radio',
       artist: 'Apple Music',
       imageLink: `${Punk}`,
-      src: "https://www.bensound.com/bensound-music/bensound-downtown.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-downtown.mp3'
     },
     {
       name: 'Rock Radio',
       artist: 'Apple Music',
       imageLink: `${Rock}`,
-      src: "https://www.bensound.com/bensound-music/bensound-smile.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-smile.mp3'
     },
     {
       name: 'Summer Radio',
       artist: 'Apple Music',
       imageLink: `${Summer}`,
-      src: "https://www.bensound.com/bensound-music/bensound-tenderness.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-tenderness.mp3'
     },
     {
       name: 'Techno Radio',
       artist: 'Apple Music',
       imageLink: `${Techno}`,
-      src: "https://www.bensound.com/bensound-music/bensound-energy.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-energy.mp3'
     },
     {
       name: 'Work From Home Radio',
       artist: 'Apple Music',
       imageLink: `${WorkFromHome}`,
-      src: "https://www.bensound.com/bensound-music/bensound-sunny.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-sunny.mp3'
     },
     {
       name: 'Workout Radio',
       artist: 'Apple Music',
       imageLink: `${Workout}`,
-      src: "https://www.bensound.com/bensound-music/bensound-adventure.mp3"
+      src: 'https://www.bensound.com/bensound-music/bensound-adventure.mp3'
     }
 ]
 
 export const MusicByMood=[
 {
     name: 'Cardio',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Cardio}`,
-    src: "https://www.bensound.com/bensound-music/bensound-thelounge.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-thelounge.mp3'
   },
   {
     name: 'Feel Good',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${FeelGood}`,
-    src: "https://www.bensound.com/bensound-music/bensound-retrosoul.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-retrosoul.mp3'
   },
   {
     name: 'Feeling Blue',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${FeelingBlue}`,
-    src: "https://www.bensound.com/bensound-music/bensound-epic.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-epic.mp3'
   },
   {
     name: 'Fitness',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Fitness}`,
-    src: "https://www.bensound.com/bensound-music/bensound-sexy.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-sexy.mp3'
   },
   {
     name: 'Morning',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Morning}`,
-    src: "https://www.bensound.com/bensound-music/bensound-enigmatic.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-enigmatic.mp3'
   },
   {
     name: 'Motivation',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Motivation}`,
-    src: "https://www.bensound.com/bensound-music/bensound-romantic.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-romantic.mp3'
   },
   {
     name: 'Productive',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Productive}`,
-    src: "https://www.bensound.com/bensound-music/bensound-littleplanet.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-littleplanet.mp3'
   },
   {
     name: 'Romance',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Romance}`,
-    src: "https://www.bensound.com/bensound-music/bensound-groovyhiphop.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-groovyhiphop.mp3'
   },
   {
     name: 'Sleep',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Sleep}`,
-    src: "https://www.bensound.com/bensound-music/bensound-actionable.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-actionable.mp3'
   },
   {
     name: 'Wellbeing',
-    artist: "Apple Music",
+    artist: 'Apple Music',
     imageLink: `${Wellbeing}`,
-    src: "https://www.bensound.com/bensound-music/bensound-extremeaction.mp3"
+    src: 'https://www.bensound.com/bensound-music/bensound-extremeaction.mp3'
   }
 ]

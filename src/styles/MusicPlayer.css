@@ -1,26 +1,47 @@
+
+
 .musicPlayerContainer{
     position: fixed;
     right:0;
     text-align: left;
     background-color: rgba(48, 48, 48, 0.95);
     width:85%;
+    height:120px;
     max-width: calc(100% - 200px);
     z-index: 2;
+}
+
+.songsContainer{
+    display: flex;
+}
+
+.songName{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.songArtist{
+    text-align: center;
+    color:rgb(143, 143, 143)
+}
+
+/* ------------------------------ rhap => React h5 audio player START ------------------------------  */
+
+.rhap_container{
+    position: relative;
+    background-color: rgb(68, 68, 68);
+    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    top: 10px;
+    left: 50%;
+    transform: translate( -50%, 0);
 }
 
 .rhap_header {
     display: flex;
     margin: auto;
 }    
-
-/* --------------------------------- rhap => React h5 audio player ---------------------------------  */
-
-.rhap_container{
-    background-color: rgb(68, 68, 68);
-    margin:auto;
-    margin-top:10px;
-    margin-bottom: 10px;
-}
 
 .rhap_time, .rhap_progress-indicator{
     display: none;
@@ -34,26 +55,49 @@
     background-color: white;
 }
 
-/* Prev Play Pause Next */
-
-.rhap_main-controls{
+.rhap_controls-section{
     position: absolute;
-    top:20px;
-    left:130px;
+    justify-content: center;
+    top: 50px;
+    left: 5%;
+    width:90%;
 }
 
-/* Shuffle button */
+/* ------------------------------ rhap => React h5 audio player END------------------------------  */
 
-.rhap_additional-controls{
-    position: absolute;
-    top:25px;
-    left:100px;
+
+@media only screen and (max-width: 650px) {
+    .musicPlayerContainer {
+    position: fixed;
+    margin: 0 auto 0 0;
+     max-width: none;
+     width:100%;
+     height:120px;
+     right:none;
+     left:0;
+     top:0;
+     display: flex;
+     align-items: center;
+    }
+
+    .mobile-invisible{
+        display: none;
+    }
+
+    /* ------------------------------ rhap Mobile ------------------------------  */
+
+     .rhap_container{
+        position: fixed;
+        display: flex;
+        top: 1%;
+        left: 50%;
+        width:95%;
+        transform: translate(-50%, -1%);
+        margin: 0 auto 0 auto;
+    }
+
+    .rhap_progress-section{
+        width:80%;
+        padding-left: 10%;
+       }
 }
-
-/* Volume */
-
-.rhap_volume-container{
-    position: relative;
-    left:50%;
-}
-

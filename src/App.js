@@ -21,6 +21,7 @@ function App() {
 
   const [musicPlayerPlaylist, setMusicPlayerPlaylist] = useState([])
   const [musicPlayerIndex, setMusicPlayerIndex] = useState()
+  
 
   return (
     <div>
@@ -35,7 +36,9 @@ function App() {
 
        <Route path="/albums" exact element={<Albums/>} />
        <Route path="/artists" exact element={<Artists/>} />
-       <Route path="/browse" exact element={<Browse/>} />
+       <Route path="/browse" exact element={<Browse 
+           setMusicPlayerPlaylist={setMusicPlayerPlaylist}
+           setMusicPlayerIndex={setMusicPlayerIndex}/>} />
        <Route path="/listen-now" exact element={<ListenNow/>} />
        <Route path="/radio" exact element={<Radio/>} />
        <Route path="/recently-added" exact element={<RecentlyAdded/>} />
@@ -43,6 +46,7 @@ function App() {
 
        </Routes>
     </BrowserRouter>
+    
     <Footer/>
     </div>
   );

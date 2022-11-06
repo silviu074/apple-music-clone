@@ -1,3 +1,11 @@
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
 .leftMenu{
     background-color: rgb(46, 46, 46);
     position: fixed;
@@ -11,29 +19,157 @@
 }
 
 .logoContainer{
-    font-size: 20px;
+    font-size: 30px;
+    margin-top:30px;
+    margin-bottom:20px;
 }
 
 .leftMenu .logoContainer{
     display: flex;
 }
 
+
 .leftMenuIcon, .logo{
-   padding: 15px 20px 0 30px;  
+   display: flex;
+   margin:auto;
+   font-style: normal;
 }
 
 .iconTextContainer{
     display: flex;
     height: 40px;
+    font-size: 15px;
+    flex-wrap:wrap;
+    align-content: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
 }
+
 
 .bottomContainer{
     position:fixed;
     bottom: 5%;
 }
 
-@media only screen and (max-width: 480px) {
-    .leftMenu {
-      display: none;
+/* --------------------------- Dropdown start ------------------------------------ */
+
+
+
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    flex-direction: column;
+	height: 100%;
+    width: 100%;
+	background-color: rgba(41, 41, 41, 0.95);
+	color: var(--textColor);
+}
+
+nav{
+    padding-top: 10px;
+}
+
+nav a {
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+    padding-top:10px;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: left;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 650px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+        width:50px;
+        margin:auto;
+	}
+
+    .nav-btn{
+        margin:auto;
     }
+
+    header{
+        background-color: transparent;
+        z-index: -2;
+    }
+
+	header nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+		background-color: rgba(48, 48, 48, 0.95);
+		transition: 1s;
+		transform: translateY(-100vh);
+	}
+
+	header .responsive_nav {
+		transform: none;
+	}
+
+    .mainFeedContianer, .musicPlayerContainer{
+        z-index:-1;
+    }
+
+    .leftMenu{
+        z-index:3;
+    }
+    .leftMenuIcon{
+        padding: 0;
+    }
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+}
+
+ /* --------------------------- Dropdown end ------------------------------------ */ 
+
+@media only screen and (max-width: 650px) {
+    .leftMenu {
+        background-color: transparent;
+     min-width: 0;
+      width:15%;
+      height: 70px;
+    }
+
+    .leftMenuIcon{
+        font-size: 20px;
+    }
+
+    
 }
