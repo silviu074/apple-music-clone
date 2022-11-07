@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
 import { Swiper1x2 } from '../components/Swipers/Swiper1x2';
-import { Swiper1x5 } from '../components/Swipers/Swiper1x5';
+import { Swiper1x6 } from '../components/Swipers/Swiper1x6';
 import { Swiper1x5small } from '../components/Swipers/Swiper1x5small';
-import { Swiper2x5 } from '../components/Swipers/Swiper2x5';
+import { Swiper2x6 } from '../components/Swipers/Swiper2x6';
 import { 
   DailyTop100,
    CityCharts, 
@@ -55,7 +55,7 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
     <div>
       <h3>City Charts</h3>
       <Context.Provider value={CityCharts} >
-        <Swiper1x5 handleClick={handleClick} />
+        <Swiper1x6 handleClick={handleClick} />
       </Context.Provider>
       <hr className='solid'/>
     </div>
@@ -76,7 +76,7 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
     <div>
       <h3>Now in Special Audio</h3>
       <Context.Provider value={DailyTop100} >
-        <Swiper1x5  handleClick={handleClick} />
+        <Swiper1x6  handleClick={handleClick} />
       </Context.Provider>
       <hr className='solid'/>
     </div>
@@ -86,7 +86,7 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
     <div>
       <h3>New Music</h3>
       <Context.Provider value={NowInSpecialAudio} >
-        <Swiper2x5 handleClick={handleClick}/>
+        <Swiper2x6 handleClick={handleClick}/>
       </Context.Provider>
       <hr className='solid'/>
     </div>
@@ -106,7 +106,7 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
     <div>
       <h3>Time for Bed</h3>
       <Context.Provider value={TimeForBed} >
-        <Swiper1x5 handleClick={handleClick}/>
+        <Swiper1x6 handleClick={handleClick}/>
       </Context.Provider>
     </div>
 

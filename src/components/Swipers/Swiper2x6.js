@@ -4,21 +4,21 @@ import { CgMoreO } from "react-icons/cg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 import { Context } from '../../pages/Browse';
-import '../../styles/Swipers/Swiper2x5.css'
+import '../../styles/Swipers/Swiper2x6.css'
 import '../../styles/MainFeed.css'
 import 'swiper/css/bundle';
 
 
-export const Swiper2x5 = ({handleClick}) => {
+export const Swiper2x6 = ({handleClick}) => {
 
   const objectsInfo = useContext(Context)
 
-  let swiper2x5Element=[]
+  let Swiper2x6Element=[]
   let halfLengthofObject=Math.round(objectsInfo.length/2)
 
   function generateElement(i){
     return(
-    <div className= 'swiper2x5Element'>
+    <div className= 'Swiper2x6Element'>
           <div className= 'imageContainer'>
           <img className= 'image'src={objectsInfo[i].imageLink}
             alt='Random cover'></img>
@@ -43,7 +43,7 @@ export const Swiper2x5 = ({handleClick}) => {
 
   for(let i=0; i<halfLengthofObject; i++){
     let j=halfLengthofObject +i
-    swiper2x5Element[i] =
+    Swiper2x6Element[i] =
         <SwiperSlide key={i}>
           {generateElement(i)}
           {generateElement(j)}
@@ -74,7 +74,7 @@ export const Swiper2x5 = ({handleClick}) => {
         slidesPerView: 6,
       }
     }}>
-      {swiper2x5Element}
+      {Swiper2x6Element}
     </Swiper>
   )
 }

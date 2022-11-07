@@ -4,21 +4,21 @@ import { Context } from '../../pages/Browse';
 import { Navigation, Pagination } from 'swiper';
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import { CgMoreO } from "react-icons/cg";
-import '../../styles/Swipers/Swiper1x5.css'
+import '../../styles/Swipers/Swiper1x6.css'
 import '../../styles/MainFeed.css'
 import 'swiper/css/bundle';
 
-export const Swiper1x5 = ({handleClick}) => {
+export const Swiper1x6 = ({handleClick}) => {
 
   const objectsInfo = useContext(Context)
 
 // this component goes thru the playlist passed from the main component 
 // and render each object inside a Slide
 
-  let swiper1x5Element = objectsInfo.map( (object, index) => {
+  let Swiper1x6Element = objectsInfo.map( (object, index) => {
     return(
       <SwiperSlide key={index}>
-         <div className= 'swiper1x5Element'>
+         <div className= 'Swiper1x6Element'>
            <div className= 'imageContainer'>
              <img className= 'image'src={object.imageLink}
                    alt='Random cover'></img>
@@ -67,7 +67,7 @@ export const Swiper1x5 = ({handleClick}) => {
         slidesPerView: 6,
       }
     }}>
-          {swiper1x5Element}
+          {Swiper1x6Element}
   
     </Swiper>
   )

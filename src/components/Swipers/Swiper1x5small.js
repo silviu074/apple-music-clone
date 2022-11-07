@@ -14,7 +14,7 @@ export const Swiper1x5small = ({handleClick}) => {
 
   const objectsInfo = useContext(Context)
 
-  let swiper1x5ElementSmall = objectsInfo.map( (object, index) => {
+  let Swiper1x6ElementSmall = objectsInfo.map( (object, index) => {
     return(
       <SwiperSlide key={index}>
       <div className= 'Swiper1x5smallElement'>
@@ -62,7 +62,7 @@ export const Swiper1x5small = ({handleClick}) => {
     }}>
     
 
-    {swiper1x5ElementSmall}
+    {Swiper1x6ElementSmall}
 
     </Swiper>
   )
