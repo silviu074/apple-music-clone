@@ -108,7 +108,6 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
       <Context.Provider value={TimeForBed} >
         <Swiper1x5 handleClick={handleClick}/>
       </Context.Provider>
-      <hr className='solid'/>
     </div>
 
     

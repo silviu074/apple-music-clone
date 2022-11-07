@@ -6,14 +6,16 @@ export const Footer = () => {
   return (
     <div className='footerContainer' >
         <div className='footerText' >
-            <p>Copyright @ 2022</p>
-            <a href='a'> Apple Inc.</a>
-            <p>All rights reserved.</p>
-            <a href='a'> Internet Service Terms</a>
-            <a href='a'> Apple Music & Privacy</a>
-            <a href='a'> Cookie Warning</a>
-            <a href='a'> Support</a>
-            <a href='a'> Feedback</a>
+            <p className='inlineElement'>Copyright @ 2022</p>
+            <a href='/' className='linkStyle'> Apple Inc.</a>
+            <p className='inlineElement'>All rights reserved.</p><br/></div>
+        <div className='footerText2' >    
+            <a href='/'  className='linkStyle'> Internet Service Terms</a>
+            <a href='/'  className='linkStyle'> Apple Music & Privacy</a>
+            <a href='/'  className='linkStyle'> Cookie Warning</a>
+            <a href='/'  className='linkStyle'> Support</a>
+            <a href='/'  className='linkStyle'> Feedback</a>
+
         </div>
     </div>
   )

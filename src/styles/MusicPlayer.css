@@ -29,6 +29,7 @@
 
 .rhap_container{
     position: relative;
+    text-align: center;
     background-color: rgb(68, 68, 68);
     border-radius: 5px;
     width: 400px;
