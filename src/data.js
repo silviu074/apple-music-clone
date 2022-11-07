@@ -283,61 +283,61 @@ export const TimeForBed =[
       name: 'Instrumental Beats',
       artist: 'Apple Music',
       imageLink: `${Beat}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-dance.mp3'
     },
     {
       name: 'Sleep Cycle',
       artist: 'Apple Music',
       imageLink: `${Cycle}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-popdance.mp3'
     },
     {
       name: 'JazZz',
       artist: 'Apple Music',
       imageLink: `${Jazzz}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-rumble.mp3'
     },
     {
       name: 'Meditation',
       artist: 'Apple Music',
       imageLink: `${Meditation}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-funkyelement.mp3'
     },
     {
       name: 'Nature',
       artist: 'Apple Music',
       imageLink: `${Nature}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-sweet.mp3'
     },
     {
       name: 'Ocean',
       artist: 'Apple Music',
       imageLink: `${Ocean}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-tomorrow.mp3'
     },
     {
       name: 'Piano',
       artist: 'Apple Music',
       imageLink: `${Piano}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-theduel.mp3'
     },
     {
       name: 'River',
       artist: 'Apple Music',
       imageLink: `${River}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-sadday.mp3'
     },
     {
       name: 'Sleep Waves',
       artist: 'Apple Music',
       imageLink: `${SleepWaves}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-psychedelic.mp3'
     },
     {
       name: 'White Noise',
       artist: 'Apple Music',
       imageLink: `${WhiteNoise}`,
-      src: 'https://www.bensound.com/bensound-music/bensound-dreams.mp3'
+      src: 'https://www.bensound.com/bensound-music/bensound-creepy.mp3'
     }
 ]
 
