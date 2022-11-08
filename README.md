@@ -1,70 +1,194 @@
-# Getting Started with Create React App
+# Apple Music Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The goal of this project was to make a music player that was as comparable to Apple Music as possible. I did not want to duplicate the whole application.
 
-## Available Scripts
+The audio files used in this project are the property of *Benjamin Tissot* and were obtained from https://www.bensound.com/
 
-In the project directory, you can run:
 
-### `npm start`
+## Built with
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * HTML 
+  * CSS
+  * Javascript
+  * React
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Libraries:
 
-### `npm test`
+  * [React Icons](https://react-icons.github.io/react-icons/)
+  * [React Router](https://reactrouter.com/en/main)
+  * [React Swiper](https://swiperjs.com/react)
+  * [React H5 Audio Player](https://github.com/lhz516/react-h5-audio-player#readme)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+https://user-images.githubusercontent.com/44822821/200437612-10b6cb13-a33c-4a94-a1d7-2ca01dc29745.mp4
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How does this work?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Page layout:
 
-### `npm run eject`
+![main](https://user-images.githubusercontent.com/44822821/200437016-6d791206-0fd9-4661-9b52-012e04151d7e.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Type of Swipers
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+  * Swiper1x2.js
+  * Swiper1x5.js
+  * Swiper2x6.js
+  * Swiper1x5small.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  Each of these swipers represent a playlist. 
+  
+  Each element found within the swiper represent a song.
 
-## Learn More
+  The content of MainFeed is mainly represented by the swipers mentioned before.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  "LeftMenu.js", "MusicPlayer.js" & "Footer.js" do no change when going to another page. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Data flow:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![dataflow](https://user-images.githubusercontent.com/44822821/200438042-05109b72-45fe-4690-a654-3596a6a7fbb8.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+ *on page load MainFeed sends an empty object to "MusicPlayer.js"* 
 
-### Making a Progressive Web App
+"data.js" contains and sends all the playlists to MainFeed (green arrows). These playlits are used to populate each Swiper.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+When the play button of a song is pressed a function sends the values of {playlist,index} corresponding to the song to "MusicPlayer.js" (blue arrows) and plays the specified song. 
 
-### Advanced Configuration
+## Swipers element definition:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Swiper1x2  
 
-### Deployment
+```
+let swiper1x2Element = objectsInfo.map( (object, index) => {
+    return(
+      <SwiperSlide key={index}>
+        <div className= 'Swiper1x2Element'>
+        <div>
+            <p>{object.status}</p>
+            <p>{object.name} - {object.artist}</p>
+            </div>
+          <div className= 'imageContainer'>
+          <img className= 'image'src={object.imageLink}
+            alt='Random cover'></img>
+            <div className= 'buttons'>
+              <span className= 'playIconSwiper1x2' onClick={() => {handleClick(objectsInfo, index)}} >
+               <BsFillPlayCircleFill size="30px"/>
+              </span>
+            </div>
+            <div className='overlayText'>
+            <p>{object.description}</p>
+            </div>
+            </div>
+         </div>
+         </SwiperSlide>)
+    })
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```
 
-### `npm run build` fails to minify
+### Swiper1x6  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+
+let Swiper1x6Element = objectsInfo.map( (object, index) => {
+    return(
+      <SwiperSlide key={index}>
+         <div className= 'Swiper1x6Element'>
+           <div className= 'imageContainer'>
+             <img className= 'image'src={object.imageLink}
+                   alt='Random cover'></img>
+              <div className= 'buttons'>
+              <span className= 'playIcon' onClick={() => {handleClick(objectsInfo, index)}}>
+               <BsFillPlayCircleFill size="30px"/>
+              </span>
+              <span className= 'moreIcon' onClick={() => { 
+                    navigator.clipboard.writeText(`${object.name} & ${object.artist}`)
+                    alert(`${object.name} - ${object.artist}  was copied to clipboard`)
+                    }}>
+              <CgMoreO size="30px"/>
+              </span>
+              </div>
+            </div>
+           <div>
+           <p>{object.name}</p>
+           <p>{object.artist}</p>
+           </div>
+       </div>
+       </SwiperSlide>)
+  })
+
+```
+
+### Swiper2x6  
+
+```
+
+function generateElement(i){
+    return(
+    <div className= 'Swiper2x6Element'>
+          <div className= 'imageContainer'>
+          <img className= 'image'src={objectsInfo[i].imageLink}
+            alt='Random cover'></img>
+            <div className= 'buttons'>
+              <span className= 'playIcon' onClick={() => {handleClick(objectsInfo, i)}}>
+              <BsFillPlayCircleFill size="30px"/>
+              </span>
+              <span className= 'moreIcon' onClick={() => { 
+                      navigator.clipboard.writeText(`${objectsInfo[i].name} & ${objectsInfo[i].artist}`)
+                      alert(`${objectsInfo[i].name} - ${objectsInfo[i].artist}  was copied to clipboard`)
+                      }}>
+                <CgMoreO size="30px"/>
+              </span>
+            </div>
+            </div>
+            <div>
+            <p>{objectsInfo[i].name}</p>
+            <p>{objectsInfo[i].artist}</p>
+            </div>
+        </div>)
+  }
+
+  for(let i=0; i<halfLengthofObject; i++){
+    let j=halfLengthofObject +i
+    Swiper2x6Element[i] =
+        <SwiperSlide key={i}>
+          {generateElement(i)}
+          {generateElement(j)}
+        </SwiperSlide>
+  }
+
+```
+
+### Swiper1x5small 
+
+```
+let Swiper1x6ElementSmall = objectsInfo.map( (object, index) => {
+    return(
+      <SwiperSlide key={index}>
+      <div className= 'Swiper1x5smallElement'>
+        <div className= 'imageContainer'>
+        <img className= 'image'src={object.imageLink}
+          alt='Random cover'></img>
+          <div className= 'buttons'>
+            <span className= 'playIcon' onClick={() => {handleClick(objectsInfo, index)}}>
+             <BsFillPlayCircleFill size="30px"/>
+            </span>
+            <span className= 'moreIcon' onClick={() => { 
+                    navigator.clipboard.writeText(`${object.name} & ${object.artist}`)
+                    alert(`${object.name} - ${object.artist}  was copied to clipboard`)
+                    }}>
+              <CgMoreO size="30px"/>
+            </span>
+          </div>
+          </div>
+          <div>
+          <p>{object.name}</p>
+          </div>
+       </div>
+       </SwiperSlide>
+    )})
+
+```
