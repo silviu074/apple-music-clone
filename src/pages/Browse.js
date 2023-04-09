@@ -28,12 +28,12 @@ export const Browse = ({setMusicPlayerPlaylist, setMusicPlayerIndex}) => {
   }
 
   useEffect(() => {
-          setMusicPlayerPlaylist(playlist)
-            }, [playlist])
-  
-   useEffect(() => {
-      setMusicPlayerIndex(i)
-            }, [i])          
+  setMusicPlayerPlaylist(playlist);
+}, [playlist, setMusicPlayerPlaylist]);
+
+useEffect(() => {
+  setMusicPlayerIndex(i);
+}, [i, setMusicPlayerIndex]);         
 
 
   return (
